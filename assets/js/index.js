@@ -174,10 +174,12 @@ function dragElement(elmnt) {
         pos4 = e.clientY;
         elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        elmnt.style.zIndex = 3;
     }
 
     function closeDragElement() {
         document.onmouseup = null;
         document.onmousemove = null;
+        elmnt.style.zIndex = 2;
     }
 }
