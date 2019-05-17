@@ -18,7 +18,6 @@
 
 <body onload="setcanvas()">
     <div id="infos" title="Bienvenue !"></div>
-
     <div class="cadre">
         <div id="bougeable">
             <canvas id="tete" width="200" height="200"></canvas>
@@ -27,19 +26,20 @@
         </div>
     </div>
 
-    <div class="cadre">
-        <div id="bougeable_moche">
-            <img src="assets/pics/BaseMoche/tete.png" id="tete_moche" />
-            <img src="assets/pics/BaseMoche/bouche_zero.png" id="bouche_zero_moche" />
-            <img src="assets/pics/BaseMoche/ bouche_un.png" id="bouche_moche" />
-        </div>
-    </div>
+
+    <div id="generate" class="inline"></div>
+
 
     <div class="colorbody" id="colorbody">
         <button type="button" id="colorbgbutton" onclick="setColor()"><span>Changer la couleur de fond</span>         
             <input type="color" id="colorPicker" name="colorPicker" value="#0000ff" />
         </button>
     </div>
+
+
+    <script src="assets/js/generate_heads.js"></script>
+    <script src="assets/js/generate.js"></script>
+
 
     <script src="assets/js/moveall.js"></script>
 
