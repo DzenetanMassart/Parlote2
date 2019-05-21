@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/jquery-ui-1.12.1/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="assets/jquery-ui-1.12.1/jquery-ui.js"></script>
     <script>
         $(function() {
             $("#infos").dialog();
@@ -18,7 +19,31 @@
 
 <body onload="setcanvas()">
 
+    <div id="infos" title="Bienvenue !"></div>
+    <div class="cadre">
+        <div id="bougeable">
+            <canvas id="tete" width="200" height="200"></canvas>
+            <canvas id="bouche_zéro" width="200" height="200"></canvas>
+            <canvas id="bouche" width="200" height="200"></canvas>
+        </div>
+    </div>
 
-    <script src="assets/js/page_build.js"></script>
+
+    <div id="generate" class="inline"></div>
+
+
+    <div class="colorbody" id="colorbody">
+        <button type="button" id="colorbgbutton" onclick="setColor()"><span>Changer la couleur de fond</span>         
+            <input type="color" id="colorPicker" name="colorPicker" value="#0000ff" />
+        </button>
+    </div>
+
+
+
+    <script src="assets/js/generate_heads.js"></script>
+    <script src="assets/js/moveall.js"></script>
+    <script src="assets/js/generate.js"></script>
+    <script src="assets/pics/BaseMoche/base_moche.js"></script>
+    <script src="assets/js/index.js"></script>
 
 </body>
