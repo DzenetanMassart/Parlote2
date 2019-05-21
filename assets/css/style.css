@@ -10,7 +10,7 @@ img { position: absolute; }
 
 .cadre { border: 5px solid black; width: 200px; height: 200px; display: inline-block; -webkit-box-shadow: inset black 0 0 10px; box-shadow: inset black 0 0 10px; background-color: white; }
 
-.colorbody { position: absolute; top: 15%; right: 0; width: 10px; height: 200px; opacity: 0.5; }
+.colorbody { position: absolute; top: 15%; right: 5%; width: 10px; height: 200px; opacity: 0.5; }
 
 .colorbody:hover { opacity: 1.0; }
 
